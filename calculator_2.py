@@ -38,5 +38,16 @@ while wants_to_play:
             print("Squaring")
             print(arithmetic.square(x))
 
+        elif user_input_split[0] == "cube":
+            print("Cube")
+            print(arithmetic.cube(x))
+
+        elif user_input_split[0] == "pow":
+            print("Pow")
+            print(arithmetic.power(x, y))
+
+        elif user_input_split[0] == "mod":
+            print("Mod")
+            print(arithmetic.mod(x, y))    
 
 
