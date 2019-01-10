@@ -40,3 +40,10 @@ def mod(num1, num2):
 def add_mult(num1, num2, num3):
     """Return the sum of the first two numbers times the third"""
     return int((num1 + num2) * num3)
+
+def add_cubes(num1 , num2):
+    """Cube both numbers and sum them """
+    cube1 = cube(num1)
+    cube2 = cube(num2)
+
+    return add(cube1, cube2)
