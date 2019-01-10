@@ -20,18 +20,23 @@ while wants_to_play:
 
         if user_input_split[0] == "+":
             print("Adding")
-
             print(arithmetic.add(x, y))
 
         elif user_input_split[0] == "-":
             print("Subtracting")
-
             print(arithmetic.subtract(x, y))
 
         elif user_input_split[0] == "*":
             print("Multiplying")
+            print(arithmetic.multiply(x, y))
 
-            print(arithmetic.m(x, y))
+        elif user_input_split[0] == "/":
+            print("Dividing")
+            print(arithmetic.divide(x, y))
+
+        elif user_input_split[0] == "square":
+            print("Squaring")
+            print(arithmetic.square(x))
 
 
 
