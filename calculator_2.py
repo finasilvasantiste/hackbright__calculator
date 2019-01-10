@@ -11,21 +11,27 @@ while wants_to_play:
     if user_input_split[0] == "q":
         wants_to_play = False
     else:
-        print("inside else")
-        if user_input_split[0] == "add":
-            print("Adding")
-
-            x = int(user_input_split[1])
+        x = int(user_input_split[1])
+        if len(user_input_split) == 3:
             y = int(user_input_split[2])
+        elif len(user_input_split) == 4:
+            y = int(user_input_split[2])
+            z = int(user_input_split[3])
+
+        if user_input_split[0] == "+":
+            print("Adding")
 
             print(arithmetic.add(x, y))
 
-        elif user_input_split[0] == "sub":
-            print("Adding")
-
-            x = int(user_input_split[1])
-            y = int(user_input_split[2])
+        elif user_input_split[0] == "-":
+            print("Subtracting")
 
             print(arithmetic.subtract(x, y))
+
+        elif user_input_split[0] == "*":
+            print("Multiplying")
+
+            print(arithmetic.m(x, y))
+
 
 
